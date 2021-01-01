@@ -41,14 +41,16 @@ nav .nav-links {
     margin-right: 2rem;
 }
 
+.nav-links li:hover {
+    margin-right: 2rem;
+
+}
+
 .nav-links a {
     text-decoration: none;
     color: white;
 }
 
-.nav-links a:hover {
-    color: #FF9500;
-}
 
 
 .but-gündüz {
@@ -79,77 +81,69 @@ nav .nav-links {
 }
 
 
-.calculator-grid {
+.calculator {
+    position: relative;
     display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . .";
 }
 
-.calculator-grid>button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+.calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
     outline: none;
-    background-color: #505050;
+    padding: 10px;
+    font-size: 28px;
+    background-color: #1C1C1C;
+    color: whitesmoke;
+}
+
+.calculator span {
+    display: grid;
+    width: 150px;
+    height: 150px;
     color: #fff;
+    background: #505050;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    font-size: 27px;
 }
 
 
-.calculator-grid>button:hover {
+.calculator span:hover {
     background: #1C1C1C;
 }
 
-.calculator-grid>button:active {
+.calculator span:active {
     background: #D4D4D2;
 }
 
-.calculator-grid>button.sıfır {
+.calculator span.sıfır {
     grid-column: span 2;
     width: 300px;
 }
 
-.calculator-grid>button.fil {
+.calculator span.fil {
     background: #505050;
 }
 
-.calculator-grid>button.fil:active {
+.calculator span.fil:active {
     background: #D4D4D2;
 }
 
-.calculator-grid>button.turuncu {
+.calculator span.turuncu {
     background: #FF9500;
 }
 
-.calculator-grid>button.turuncu:active {
+.calculator span.turuncu:active {
     background: #FF9100;
-}
-
-.span-two {
-    grid-column: span 2;
-}
-
-.output {
-    grid-column: 1 / -1;
-    background: #1C1C1C;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-
-.output .previous-operand {
-    color: rgba(255, 255, 255, .75);
-    font-size: 1.5rem;
-}
-
-.output .current-operand {
-    color: white;
-    font-size: 2.5rem;
 }
