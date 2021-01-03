@@ -144,18 +144,38 @@ function getRandomInt(min, max) {
     calculator.updateDisplay();
 }
 
-function numDigits(x) {
-    // console.log(a);
-    var a = document.getElementById("output").innerHTML;
-    console.log(a.toString().length)
-    var digitNumber = a.toString().length
-    calculator.clear()
-    calculator.appendNumber(digitNumber)
+function numDigits() {
+    let a = document.getElementById("output").innerHTML;
+    let digitNumber = a.toString().length;
+    calculator.clear();
+    calculator.appendNumber(digitNumber);
     calculator.updateDisplay();
 }
-function disableCalculatorGrid() {
-    var calculatorGrid = document.getElementsByClassName("calculator-grid")[0]
-    calculatorGrid.style = "display: none; "
+// function disableCalculatorGrid() {
+//     var calculatorGrid = document.getElementsByClassName("calculator-grid")[0]
+//     calculatorGrid.style = "display: none; "
+// }
+
+// function bin_to_dec(bstr) {
+//     parseInt((bstr + '').replace(/[^01]/gi, ''), 2);
+// }
+// console.log(bin_to_dec('110011'));
+
+// var binary = "1101000";
+// alert(parseInt(binary, 2));
+
+function binaryToDecimal() {
+    let binary = document.getElementById("output").innerHTML;
+    let decimal = parseInt((binary + '').replace(/[^01]/gi, ''), 2);
+    calculator.clear();
+    calculator.appendNumber(decimal);
+    calculator.updateDisplay();
 }
 
-
+function decimalToBinary() {
+    let dec1mal = document.getElementById("output").innerHTML;
+    let b1nary = (+dec1mal).toString(2);
+    calculator.clear();
+    calculator.appendNumber(b1nary);
+    calculator.updateDisplay();
+}
