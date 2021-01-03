@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="index.js" defer></script>
 </head>
 
@@ -12,7 +13,7 @@
     <nav>
         <ul class="nav-links">
             <li class="navbar-brand">
-                Vahitcan Tutar - IOS Styled
+                VahitcanT - IOS Styled
             </li>
             <li><a href="#">Simple</a></li>
             <li><a href="#">Programmer</a></li>
@@ -22,10 +23,11 @@
             </li>
         </ul>
     </nav>
+    <button onclick="disableCalculatorGrid()">test</button>
     <div class="calculator-grid">
         <div class="output">
-            <div data-previous-operand class="previous-operand" id="output"></div>
-            <div data-current-operand class="current-operand"></div>
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand" id="output"></div>
         </div>
         <button data-all-clear class="fil">AC</button>
         <button data-delete>DEL</button>
@@ -46,24 +48,14 @@
         <button data-number class="span-two">0</button>
         <button data-number>.</button>
         <button data-equals class="turuncu">=</button>
-        <button class="but-gündüz" style="margin-top: 15px; font-size: 20px;" value="Random"
+        <button class="but-gündüz" style="margin-top: 25px; font-size: 20px;"
             onclick="getRandomInt(1,999999);">Random</button>
+        <button class="but-gündüz" style="margin-top: 25px; margin-left: 10px; font-size: 10px;"
+            onclick="numDigits(window.result);">Total
+            Number of Digit</button>
     </div>
-    <script>
-        var element = document.body;
-        function gece() {
-            element.classList.toggle("dark");
-        }
-        let sum;
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            sum = Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is 1,999999
-            // console.log(sum);
-            document.getElementById("output").innerText = sum;
-        }
 
-    </script>
+
 </body>
 
 </html>

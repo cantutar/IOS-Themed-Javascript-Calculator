@@ -41,28 +41,22 @@ nav .nav-links {
     margin-right: 2rem;
 }
 
-.nav-links li:hover {
-    margin-right: 2rem;
-
-}
-
 .nav-links a {
     text-decoration: none;
     color: white;
 }
 
 
-
-.but-gündüz {
-    background-color: white;
-    color: black;
+.but-gece {
+    background-color: black;
+    color: white;
     border-radius: 30px;
     padding: 5px;
 }
 
-.but-gündüz:hover {
-    background-color: black;
-    color: white;
+.but-gündüz {
+    background-color: white;
+    color: black;
     border-radius: 30px;
     padding: 5px;
 }
@@ -80,7 +74,7 @@ nav .nav-links {
     min-height: 100vh;
 }
 
-
+/* 
 .calculator {
     position: relative;
     display: grid;
@@ -146,4 +140,47 @@ nav .nav-links {
 
 .calculator span.turuncu:active {
     background: #FF9100;
+} */
+
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.calculator-grid>button:hover {
+    background-color: white;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1/-1;
+    background-color: #1C1C1C;
+    color: whitesmoke;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output.previous-operand {
+    color: rgba(255, 255, 255, .75);
 }

@@ -124,3 +124,38 @@ deleteButton.addEventListener("click", button => {
     calculator.delete();
     calculator.updateDisplay();
 })
+
+var element = document.body;
+function gece() {
+    element.classList.toggle("dark");
+}
+
+let sum;
+window.result = 0;
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    sum = Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is 1,999999
+    // console.log(sum);
+    //updateResult(sum);
+    calculator.clear()
+    calculator.appendNumber(sum)
+    calculator.updateDisplay();
+}
+
+function numDigits(x) {
+    // console.log(a);
+    var a = document.getElementById("output").innerHTML;
+    console.log(a.toString().length)
+    var digitNumber = a.toString().length
+    calculator.clear()
+    calculator.appendNumber(digitNumber)
+    calculator.updateDisplay();
+}
+function disableCalculatorGrid() {
+    var calculatorGrid = document.getElementsByClassName("calculator-grid")[0]
+    calculatorGrid.style = "display: none; "
+}
+
+
