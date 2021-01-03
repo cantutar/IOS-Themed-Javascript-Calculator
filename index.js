@@ -56,6 +56,9 @@ class Calculator {
             case "%":
                 computation = prev % current;
                 break;
+            case "^":
+                computation = Math.pow(prev, current);
+                break;
             default:
                 return;
         }
@@ -151,18 +154,21 @@ function numDigits() {
     calculator.appendNumber(digitNumber);
     calculator.updateDisplay();
 }
+
+//! koda bak 
+
+// function nokta() {
+//     let value = document.getElementById("output").innerHTML;
+//     if (Math.floor(value) === value) return 0;
+//     return value.toString().split(".")[1].length || 0;
+// }
+
+// console.log(nokta());
+
 // function disableCalculatorGrid() {
 //     var calculatorGrid = document.getElementsByClassName("calculator-grid")[0]
 //     calculatorGrid.style = "display: none; "
 // }
-
-// function bin_to_dec(bstr) {
-//     parseInt((bstr + '').replace(/[^01]/gi, ''), 2);
-// }
-// console.log(bin_to_dec('110011'));
-
-// var binary = "1101000";
-// alert(parseInt(binary, 2));
 
 function binaryToDecimal() {
     let binary = document.getElementById("output").innerHTML;
@@ -177,5 +183,88 @@ function decimalToBinary() {
     let b1nary = (+dec1mal).toString(2);
     calculator.clear();
     calculator.appendNumber(b1nary);
+    calculator.updateDisplay();
+}
+
+function hexToDecimal() {
+    let hex = document.getElementById("output").innerHTML;
+    let energy = parseInt(hex, 16);
+    console.log(energy);
+    calculator.clear();
+    calculator.appendNumber(energy);
+    calculator.updateDisplay();
+}
+
+function decimalToHex() {
+    let hex = document.getElementById("output").innerHTML;
+    let sampuan = parseInt(hex, 10).toString(16);
+    calculator.clear();
+    calculator.appendNumber(sampuan);
+    calculator.updateDisplay();
+}
+
+function sin1() {
+    let x = document.getElementById("output").innerHTML;
+    let sin = Math.sin(x);
+    calculator.clear();
+    calculator.appendNumber(sin);
+    calculator.updateDisplay();
+}
+
+function cos1() {
+    let x = document.getElementById("output").innerHTML;
+    let cos = Math.cos(x);
+    calculator.clear();
+    calculator.appendNumber(cos);
+    calculator.updateDisplay();
+}
+
+function tanh1() {
+    let x = document.getElementById("output").innerHTML;
+    let tan = Math.tanh(x)
+    calculator.clear();
+    calculator.appendNumber(tan);
+    calculator.updateDisplay();
+}
+
+function log1() {
+    let x = document.getElementById("output").innerHTML;
+    let log = Math.log(x)
+    calculator.clear();
+    calculator.appendNumber(log);
+    calculator.updateDisplay();
+}
+function exp1() {
+    let x = document.getElementById("output").innerHTML;
+    let exp = Math.exp(x);
+    calculator.clear();
+    calculator.appendNumber(exp);
+    calculator.updateDisplay();
+}
+
+
+function factorial(n) {
+    //base case
+    if (n == 0 || n == 1) {
+        return 1;
+        //recursive case
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+function fak() {
+    let n = document.getElementById("output").innerHTML;
+    a = factorial(n);
+    calculator.clear();
+    calculator.appendNumber(a);
+    calculator.updateDisplay();
+}
+
+function sign() {
+    let n = document.getElementById("output").innerHTML;
+    a = n * (-1);
+    calculator.clear();
+    calculator.appendNumber(a);
     calculator.updateDisplay();
 }
