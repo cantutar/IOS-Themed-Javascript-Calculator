@@ -1,4 +1,4 @@
-# IOS Themed Javascript Calcutor for Toros University CSE203
+# IOS Themed Javascript Calcutor
 
 Explanation for files.
 
