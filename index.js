@@ -155,7 +155,7 @@ function numDigits() {
     calculator.updateDisplay();
 }
 
-//! koda bak 
+//
 
 // function nokta() {
 //     let value = document.getElementById("output").innerHTML;
