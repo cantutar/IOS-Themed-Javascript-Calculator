@@ -27,7 +27,7 @@ CSE203-Term ProjectFall2020.pdf project file from our teacher.
 
 ## Demo(Images)
 
-![alt text](https://imgur.com/a/ysH85fn)
+![alt text](https://i.imgur.com/KSnkeA5.png)
 
 ## Author
 
