@@ -33,7 +33,7 @@ CSE203-Term ProjectFall2020.pdf project file from our teacher.
 
 👤 **Can Tutar**
 
-* Website: [cantutar.com](cantutar.com) (work in progress)
+* Website: [cantutar.com](https://cantutar.com) (work in progress)
 * Github: [@cantutar](https://github.com/cantutar)
 * LinkedIn: [@can tutar](https://www.linkedin.com/in/can-tutar-61b6a31b9/)
 
