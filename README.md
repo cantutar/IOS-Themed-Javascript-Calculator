@@ -35,9 +35,6 @@ CSE203-Term ProjectFall2020.pdf project file from our teacher.
 * Github: [@cantutar](https://github.com/cantutar)
 * LinkedIn: [@can tutar](https://www.linkedin.com/in/can-tutar-61b6a31b9/)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues). You can also take a look at the [contributing guide](https://github.com/kefranabg/readme-md-generator/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
