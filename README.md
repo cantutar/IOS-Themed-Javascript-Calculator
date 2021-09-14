@@ -25,7 +25,7 @@ ios-calculator.webp is for getting inspired from that picture when im coding it.
 
 CSE203-Term ProjectFall2020.pdf project file from our teacher.
 
-## Demo(Images)
+## Demo(Image)
 
 ![alt text](https://i.imgur.com/KSnkeA5.png)
 
