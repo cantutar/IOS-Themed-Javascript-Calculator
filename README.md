@@ -45,7 +45,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2021 [Can Tutar](https://github.com/cantutar).<br />
+Copyright © 2020 [Can Tutar](https://github.com/cantutar).<br />
 This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
 
 ***
